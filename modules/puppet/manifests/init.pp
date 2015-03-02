@@ -16,4 +16,9 @@ class puppet {
         minute => '*/15',
         hour => "*",
     }
+
+    package { 'puppet-lint':
+        ensure => '1.1.0',
+        provider => 'gem',
+    }
 }
