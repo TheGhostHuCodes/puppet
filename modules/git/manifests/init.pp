@@ -1,7 +1,7 @@
 class git {
   package { ['git',
-             'gitk',
-             'meld']:
+    'gitk',
+    'meld']:
     ensure => installed,
   }
 }
