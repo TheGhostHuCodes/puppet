@@ -3,4 +3,5 @@ node 'AzHure' {
     include git
     include puppet
     include terminal
+    include latex
 }
