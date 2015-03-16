@@ -6,4 +6,14 @@ class terminal {
   package { 'tmux':
     ensure => installed,
   }
+
+  package { 'zsh':
+    ensure => installed,
+  }
+
+  user { "yhu":
+    ensure  => present,
+    shell   => "/bin/zsh",
+    require => Package['zsh'],
+  }
 }
